@@ -1,0 +1,171 @@
+/*-----------------------------------side nav-------------------------*/
+
+.left-s-heading h3 {
+	background: transparent url("../images/sidebarSep.png") no-repeat scroll center bottom;
+	margin: 0px 0px 5px;
+	color: #d4d4d4;
+	padding: 10px 0 18px;
+	text-align: center;
+	font-weight: 600;
+}
+/* Base Styles */
+#vcssmenu, #vcssmenu ul, #vcssmenu li, #vcssmenu a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1;
+	font-size: 14px;
+	position: relative;
+}
+#vcssmenu a {
+	line-height: 1.3;
+}
+/*#vcssmenu {
+	margin-top: 20px;
+}*/
+#vcssmenu > ul > li {
+	margin: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+#vcssmenu > ul > li:last-child {
+	margin: 0;
+	border-bottom: none
+}
+#vcssmenu > ul > li > a {
+	font-size: 17px;
+	display: block;
+	color: #f8f8f8;
+	padding: 0 10px;
+	font-weight: 500
+}
+#vcssmenu > ul > li > a > span {
+	display: block;
+	padding: 10px 10px 10px 0;
+}
+#cssmenu a:hover {
+	color: #000;
+}
+#vcssmenu a:active, #vcssmenu a:focus {
+	background-color:#152e46;
+	color: #fff;
+}
+#vcssmenu > ul > li.active {
+	border-bottom: none;
+}
+#vcssmenu > ul > li > a {
+	border-left: 3px solid #BFBFBF
+}
+#vcssmenu > ul > li > a:hover {
+	border-left: 3px solid #274E73
+}
+#vcssmenu > ul > li.active > a {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: #e7ebee;
+    color: #f8f8f8;
+    border-left: 3px solid rgba(221, 221, 221, 0.42);
+}
+#vcssmenu > ul > li.active > a span {
+}
+#vcssmenu > ul > li.has-sub > a span {
+	background: url(../images/icon_plus.png) no-repeat right;
+	transition: all 0.4s, linear 0.4s;
+	-moz-transition: all 0.4s, linear 0.4s;
+	-ms-transition: all 0.4s, linear 0.4s;
+	-webkit-transition: all 0.4s, linear 0.4s;
+	-o-transition: all 0.4s, linear 0.4s;
+}
+#vcssmenu > ul > li.has-sub:hover {
+	background-color: #152e46;
+}
+#vcssmenu > ul > li.has-sub.active > a span {
+	background: url(../images/icon_minus.png) right center no-repeat;
+	transition: all 0.4s, linear 0.4s;
+	-moz-transition: all 0.4s, linear 0.4s;
+	-ms-transition: all 0.4s, linear 0.4s;
+	-webkit-transition: all 0.4s, linear 0.4s;
+	-o-transition: all 0.4s, linear 0.4s;
+}
+/* Sub menu */
+#vcssmenu ul ul ul {
+	padding: 5px 12px;
+	display: block;
+}
+#vcssmenu ul ul {
+	padding: 0;
+	display: none;
+	background-color: #FEFEFE;
+}
+#vcssmenu ul ul li a {
+	color: #274E73;
+}
+#vcssmenu ul ul li a:hover {
+	background: rgba(0, 0, 0, 0.03);
+	color: #484848
+}
+#vcssmenu ul ul li a.active {
+	background: url("../img/add_user.png") no-repeat scroll 10px 11px #FFFFFF;
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+	color: #6DA502;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+#vcssmenu ul ul a {
+	display: block;
+	border-bottom: 1px solid #E9E9E9;
+	padding: 7px 0px 7px 10px;
+	font-size: 13px;
+	font-weight: 500;
+}
+#vcssmenu ul ul a:before {
+	font-family: "FontAwesome";
+	content: "";
+	font-size: 15px;
+	padding-right: 5px;
+}
+#vcssmenu ul ul a:hover {
+	color: #79980d;
+}
+.vcssmenu ul ul li a.active:after {
+	border-color: rgba(255, 255, 255, 0) #FFFFFF rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+	border-width: 14px;
+	margin-top: -14px;
+	top: 50%;
+}
+.vcssmenu ul ul li a.active:after {
+	border: medium solid rgba(0, 0, 0, 0);
+	content: " ";
+	height: 0;
+	pointer-events: none;
+	position: absolute;
+	right: -24px;
+	width: 0;
+}
+.vcssmenu li a {
+	border-bottom: 1px solid #215171;
+	border-radius: 4px 0 0 4px;
+	border-top: 1px solid #2F6A8F;
+	display: block;
+}
+/*Form*/
+.toggleMenu {
+	background: url(../images/responsive_menu_icon.png) no-repeat right, -moz-linear-gradient(center top, #3F94BF, #246485) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #1B5572;
+	box-shadow: 0 1px 5px rgba(34, 34, 34, 0.5);
+	color: #FFFFFF;
+	display: none;
+	margin-left: -20px !important;
+	padding: 5% !important;
+	width: 104%;
+	font-size: 20px;
+}
+ @media screen and (max-width: 768px) {
+.navi li li .parent {
+	background-image: url("../images/downArrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+}
